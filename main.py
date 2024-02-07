@@ -9,13 +9,13 @@ app=Flask(__name__)
 prev=0
 CORS(app)
 config={
-    'apiKey': "AIzaSyDeG_7WW_fq2FtdswAQWEtQRM9CBNXiRgw",
-    'authDomain': "sehat-8de79.firebaseapp.com",
-    'databaseURL': "https://sehat-8de79-default-rtdb.firebaseio.com",
-    'projectId': "sehat-8de79",
-    'storageBucket': "sehat-8de79.appspot.com",
-    'messagingSenderId': "47743319189",
-    'appId': "1:47743319189:web:e701fbee1d15dd2bbdef9c",
+    "apiKey": "AIzaSyDdB4M2GsADKSGYWb0eKBgILfKUzl7Clu4",
+    "authDomain": "sehat-b6b45.firebaseapp.com",
+    "databaseURL": "https://sehat-b6b45-default-rtdb.firebaseio.com",
+    "projectId": "sehat-b6b45",
+    "storageBucket": "sehat-b6b45.appspot.com",
+    "messagingSenderId": "780195480931",
+    "appId": "1:780195480931:web:b78149d477963018e43f56"
 }
 firebase=pyrebase.initialize_app(config)
 db = firebase.database()
