@@ -1,3 +1,4 @@
 Flask
 Gunicorn
 Pyrebase4
+flask_cors
