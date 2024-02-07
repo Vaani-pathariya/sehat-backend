@@ -365,7 +365,7 @@ def adhar_data():
         print ("Error",str(e))
     return 'Done',201
 if __name__=='__main__':
-    app.run(host='0.0.0.0',debug=True)
+    app.run(host='0.0.0.0',debug=True, post=8080)
 
 
 
