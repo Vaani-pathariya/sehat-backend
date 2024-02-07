@@ -35,7 +35,7 @@ def getFire():
         print ("Error",str(e))
 #Function to get audio data from vite frontend
 @app.route('/api/upload_cataract', methods=['POST'])
-def upload_image():
+def upload_image_cataract():
     if 'Files' not in request.files:
         return 'No file part', 400
 
@@ -47,7 +47,7 @@ def upload_image():
 
     return 'Images uploaded successfully'
 @app.route('/api/upload_skin', methods=['POST'])
-def upload_image():
+def upload_image_skin():
     if 'Files' not in request.files:
         return 'No file part', 400
 
