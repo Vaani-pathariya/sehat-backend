@@ -46,6 +46,18 @@ def upload_image():
         # Example: file.save('uploads/' + file.filename)
 
     return 'Images uploaded successfully'
+@app.route('/api/upload_skin', methods=['POST'])
+def upload_image():
+    if 'Files' not in request.files:
+        return 'No file part', 400
+
+    files = request.files.getlist('Files')
+
+    # Process or save each file as needed.
+    #for file in files:
+        # Example: file.save('uploads/' + file.filename)
+
+    return 'Images uploaded successfully'
 @app.route("/api/receiveBody/1", methods=['POST'])
 def formBody():
     global adhar_Number
