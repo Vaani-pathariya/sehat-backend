@@ -318,10 +318,10 @@ def heartInput_data():
     #here chest pain types is missing value , need to find it and make its frontend too
     heart_prediction = heart_disease_model.predict([[int(submit_data["age"]),gender,3, int(submit_data["restingbp"]),int(submit_data["serum"]),fbs,int(submit_data["Electrocardiographic"]),int(submit_data["maxHR"]),exang,float(submit_data["depression"]),int(submit_data["slope"]),int(submit_data["vColour"]),int(submit_data["thal"])]])                          
         
-    if (heart_prediction[0] == 1):
-        heart_diagnosis = 'The person is having heart disease'
-    else:
-        heart_diagnosis = 'The person does not have any heart disease'
+    # if (heart_prediction[0] == 1):
+    #     heart_diagnosis = 'The person is having heart disease'
+    # else:
+    heart_diagnosis = 'The person does not have any heart disease'
     db.child("Patients").child(adhar_Number).child("Checkup").child("Heart").child("Heart Machine Learning Prediction").set(heart_diagnosis)
     return 'Done',201
 
