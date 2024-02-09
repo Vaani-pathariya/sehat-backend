@@ -1,4 +1,3 @@
 env
 EfficientNetB3-skin disease-83.79.h5
 Heart_disease_model.sav
-my_model.h5
